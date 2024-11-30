@@ -1,0 +1,34 @@
+---
+import { Image } from "astro:assets";
+import "../styles/layouts/AboutLayout.scss";
+
+import Elipses from "../assets/images/about-aside.png"
+import Line from "../assets/images/about-line.png"
+import BlueBalls from "../assets/images/about-blue-balls.png"
+
+import PcImage from "../assets/images/pc_about_1.svg"
+import PcImage2 from "../assets/images/pc_about.svg"
+---
+
+<section id="about">
+    <article class="about-card">
+        <h2 class="title">Priorizamos a qualidade <span class="subtle">acima de tudo</span></h2>
+        <p class="description">
+            Aqui na +Tech, qualidade e segurança vêm em primeiro lugar,
+            fique um passo a frente daqueles que priorizam velocidade sobre qualidade.
+        </p>
+    </article>
+   
+        <Image class="img" src={PcImage} height={200} width={300} alt="Elipses"/>
+
+ 
+        <Image class="img" src={PcImage2} height={150} width={240} alt="Elipses"/>
+  
+    <article class="about-card">
+        <h2 class="title">Nosso objetivo <span class="subtle">e propósito</span></h2>
+        <p class="description">
+            Somos uma empresa de desenvolvimento web e design,
+            Nosso objetivo é atualizar e reescrever a forma como empresas e pequenos negócios marcam presença online.
+        </p>
+    </article>
+</section>
